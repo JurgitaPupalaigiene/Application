@@ -11,6 +11,15 @@ public class UpdatingFestival {
     public UpdatingFestival() {
     }
 
+    public UpdatingFestival(String oldTitle, String title, String image, String description, String type, boolean flag) {
+        this.oldTitle = oldTitle;
+        this.title = title;
+        this.image = image;
+        this.description = description;
+        this.type = type;
+        this.flag = flag;
+    }
+
     public String getOldTitle() {
         return oldTitle;
     }

@@ -1,7 +1,9 @@
 import React from 'react';
 
-const AtnaujinamosSventesKomponentas = (props) => {    
+const UpdatingFestivalComponent = (props) => {    
     return (
+<div className="jumbotron jumbotron-fluid">
+  <div className="container">
         <form >
             <div className="form-row">
                 <div className="col-md-12 mb-12">
@@ -30,14 +32,17 @@ const AtnaujinamosSventesKomponentas = (props) => {
                     <input type="text" className="form-control" id="validationDefault04" placeholder="" value={props.currentType} required onChange={props.handleChangeOfType}></input>
                 </div>
                 <div className="col-md-4 mb-3">
-                    <label htmlFor="validationDefault05">Veliava</label>
+                    <label htmlFor="validationDefault05">Veliava galima iskelti</label>
                     <input type="text" className="form-control" id="validationDefault05" placeholder="" value={props.currentFlag} required onChange={props.handleChangeOfFlag}></input>
                 </div>
             </div>
-            <button className="btn btn-primary" type="submit" onClick={props.handleSubmit}>Sau</button>
+            <button className="btn btn-primary" type="submit" onClick={props.handleSubmit}>Saugoti</button>
             <button className="btn btn-primary" onClick={props.handleDelete}>Delete</button>
         </form>
+    
+    </div>
+</div>
     );
 }
 
-export default AtnaujinamosSventesKomponentas;
+export default UpdatingFestivalComponent;

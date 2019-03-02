@@ -33,15 +33,15 @@ public class FestivalService {
                         festival.getType(),
                         festival.isFlag())).collect(Collectors.toList());
     }
-
+//Viena svente
     @Transactional(readOnly = true)
     public FestivalDTO findFestivalByTitle(String title) {
 
         Festival currentFestival = festivalRepository.findFestivalByTitle(title);
         FestivalDTO festivalToController = new FestivalDTO(
                 currentFestival.getTitle(),
-                currentFestival.getDescription(),
                 currentFestival.getImage(),
+                currentFestival.getDescription(),
                 currentFestival.getType(),
                 currentFestival.isFlag());
         return festivalToController;

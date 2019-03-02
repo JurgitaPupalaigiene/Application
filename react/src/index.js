@@ -8,4 +8,5 @@ import '../node_modules/popper.js/dist/popper';
 
 
 ReactDOM.render(
-    <App />, document.getElementById('root'));
+    <App />, 
+    document.getElementById('root'));

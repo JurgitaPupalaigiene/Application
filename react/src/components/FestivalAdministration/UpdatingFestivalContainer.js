@@ -1,9 +1,9 @@
 import React from 'react';
-import AtnaujinamosSventesKomponentas from './AtnaujinamosSventesKomponentas';
+import UpdatingFestivalComponent from './UpdatingFestivalComponent';
 import axios from 'axios';
 import { withRouter } from 'react-router';
 
-class EditHolidayContainer extends React.Component {
+class UpdatingFestivalContainer extends React.Component {
   constructor(props) {
     super(props);
 
@@ -80,7 +80,7 @@ class EditHolidayContainer extends React.Component {
     this.fromMenu = "Atnaujinama Šventė:";
 
     return (
-      <AtnaujinamosSventesKomponentas handleChangeOfTitle={this.handleChangeOfTitle}
+      <UpdatingFestivalComponent handleChangeOfTitle={this.handleChangeOfTitle}
         handleChangeOfImage={this.handleChangeOfImage}
         handleChangeOfDescription={this.handleChangeOfDescription}
         handleChangeOfType={this.handleChangeOfType}
@@ -98,4 +98,4 @@ class EditHolidayContainer extends React.Component {
   }
 }
 
-export default withRouter(EditHolidayContainer);
+export default withRouter(UpdatingFestivalContainer);

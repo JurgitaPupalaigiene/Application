@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-var PirmasPuslapis = (props) => {
+var HomePage = (props) => {
     return (
 
         <div>
@@ -22,7 +22,6 @@ var PirmasPuslapis = (props) => {
                             <li className="nav-item active">
                                 <Link to='/kontaktai'>Kontaktai</Link> |&nbsp;
                             </li>
-
                         </ul>
                     </div>
                 </nav>
@@ -32,5 +31,5 @@ var PirmasPuslapis = (props) => {
 
 };
 
-export default PirmasPuslapis;
+export default HomePage;
 

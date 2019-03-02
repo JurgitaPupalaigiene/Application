@@ -1,16 +1,16 @@
 import React from 'react';
-import NewHolidayComponent from './NewHolidayComponent';
+import NewFestivalComponent from './NewFestivalComponent';
 import axios from 'axios';
 import { withRouter } from 'react-router';
 
 
-class NewHolidayContainer extends React.Component {
+class NewFestivalContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       title: '',
-      description: '',
       image: '',
+      description: '',
       type: '',
       flag: false,
      
@@ -48,16 +48,15 @@ class NewHolidayContainer extends React.Component {
         console.log(error);
       });
   }
-  // componentDidMount() {
+  componentDidMount() {
 
-  //   //console.log(this.props.history.location.pathname);
-  // }
+  }
   render() {
     
-    this.fromMenu = "Enter new holiday data:"
+    this.fromMenu = "Iveskite naujos sventes duomenis:"
 
     return (
-      <NewHolidayComponent handleChangeOfTitle={this.handleChangeOfTitle}
+      <NewFestivalComponent handleChangeOfTitle={this.handleChangeOfTitle}
         handleChangeOfImage={this.handleChangeOfImage}
         handleChangeOfDescription={this.handleChangeOfDescription}
         handleChangeOfType={this.handleChangeOfType}
@@ -69,4 +68,4 @@ class NewHolidayContainer extends React.Component {
   }
 }
 
-export default withRouter(NewHolidayContainer);
+export default withRouter(NewFestivalContainer);
